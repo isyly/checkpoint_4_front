@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.ConsoleGame_container {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 40px;
+  height: auto;
+}
+.ConsoleGame_list {
+  display: grid;
+  grid-gap: 6px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.game {
+  /* display: flex;
+  flex-direction: column; */
+  /* width: 100%; */
+
+  border: 1px solid #bec8e4;
+  border-radius: 8px;
+  box-shadow: 1px 2px 3px #616369, -8px -8px 20px #fff;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+.game_image {
+  border-radius: 6px;
+  /* width: 100%; */
+}
+
+.game_info {
+  font-size: clamp(6px, 1em, 2em);
+  margin: 1rem auto;
+}
+
+@media screen and (max-width: 1000px){
+  .container {
+    margin: 0 3vw;
+  }
+  form label {
+    font-size: 18px;
+  }
+}
